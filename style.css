@@ -1,0 +1,407 @@
+/* mobile version */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    text-align: center;
+    font-size: 19px;
+   
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(29, 29, 29);
+    
+   
+}
+#home a{
+    color: rgb(238, 212, 62);
+    text-transform: uppercase;
+    padding: 25px 20px;
+    font-size: 25px;
+    font-weight: bolder;  
+    float: left; 
+}
+header li{
+    display: none;
+   
+}
+
+.title{
+    text-transform: uppercase;
+}
+
+/* welcome block */
+#welcome{
+    background-image: url("https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/header-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;  
+}
+
+#welcome p{
+    font-family:'Newsreader', serif;
+    font-size: 25px;
+    padding-bottom: 15px;
+    color: white;
+}
+#welcome h1{
+    color: white;
+    font-weight: bold;
+    font-size: 48px;
+    padding: 0 30px;
+}
+button{
+    background-color: rgb(228, 196, 17);
+    padding: 25px 55px;
+    margin-top: 45px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    text-transform: uppercase;
+    
+}
+button a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    border: none;
+    background-color: rgb(184, 146, 9);
+}
+
+/* service block */
+h1{
+    color: rgb(42, 38, 38);
+    font-size: 40px;
+    padding-top: 70px;
+    margin: 10px;
+}
+.lorem{
+    color: grey;
+    font-family: 'Newsreader', serif;
+    padding-bottom: 35px;
+}
+/* logo-bar block */
+
+
+.logo-bar .fas{
+
+    font-size: 70px;
+    border: solid 1px;
+    background-color: rgb(228, 196, 17);
+    padding: 25px;
+    color: white;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.logo-bar, p{
+   
+    line-height: 1.8;
+}
+h3{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+   color:  rgb(42, 38, 38);
+}
+p, .prof{
+    
+    color: grey;
+    padding: 15px;
+}
+/* portfolio block */
+/* .two-blocks{
+   line-height: 1;
+    background-color: rgb(231, 230, 230);
+    padding-bottom: 70px;
+} */
+#portfolio h3{
+    margin-bottom: 7px;
+}
+.pictures{
+  
+    margin: 20px 40px;
+    background-color: white;    
+    cursor: pointer;
+}
+.pictures img{
+    width: 100%;
+   
+}
+.overlay{
+    position: relative;
+   
+}
+.hover-top{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgb(255, 239, 8);
+}
+.overlay:hover .hover-top{
+    opacity: 1;
+}
+
+
+.plus{  
+    font-size: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+ 
+}
+
+.hover-top:hover .plus {
+    color: #eee;
+}
+
+
+
+/* team block */
+
+.photo{
+    margin: 30px;
+    
+}
+.photo h3{
+   margin-bottom: 0;
+    
+}
+.photo img{
+    width: 200px;
+    border: solid 7px rgb(206, 206, 206);
+    border-radius: 50%;
+    margin-top: 15px;
+}
+.fab{
+border: solid 1px;
+padding: 8px 10px;
+background-color: rgb(42, 38, 38);
+color: white;
+border-radius: 50%;
+margin: 5px;
+}
+.fa-facebook-f{
+    padding: 8px 13px !important;
+}
+.icon .fab:hover{
+    border: grey 2px solid;
+}
+#team p{
+    text-align: center;
+    line-height: 1.5;    
+}
+#companies{
+   
+    padding: 30px 0;
+    color: grey;
+    cursor: pointer;
+    
+}
+
+#companies ul li{
+   list-style-type: none;
+   padding: 10px;
+  
+}
+/* contact block */
+#contact{
+    background-image: url("dotted-world-map.jpg");
+    height: 900px;
+    background-size: cover;
+
+    
+}
+#contact h1{
+    color: white;
+   
+}
+input, textarea{
+    width: 80%;
+    font-weight: bolder;
+    font-size: 17px;
+    padding: 23px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}
+
+textarea{   
+    height: 200px;   
+}
+::placeholder{
+    opacity: 0.5;
+}
+/* footer */
+#last-block{
+    display:block;
+  
+}
+footer p{
+    
+    color: rgb(42, 38, 38);
+    font-size: 15px;
+
+}
+footer a{
+    text-decoration: none;
+    color: rgb(228, 196, 17);
+    font-size: 15px;
+    padding: 20px 0;
+    margin: 10px;
+    cursor: pointer;
+}
+footer a:hover{
+    text-decoration:underline;
+}
+
+
+
+ 
+@media (min-width: 768px){
+    /* tablet version */
+    
+    header a{
+        
+        text-transform: uppercase;
+        font-size: 17px;
+        color: white;
+        text-decoration: none;    
+    }
+    header a:hover{
+        transition: background 2s ease;
+        color: rgb(228, 196, 17);
+    }
+    /* welome */
+    #welcome{
+        height: 750px;
+    }
+    /* service */
+    .logo-bar{
+       display: flex;
+       padding: 30px 0;
+    }
+    /* portfolio */
+    #portfolio{
+        margin: auto;
+    }
+    .images{
+        margin: 15px;
+        display:grid;
+        grid-template-columns: auto auto;
+    }
+    .pictures{
+        margin: 10px;
+        width: 95%;
+    }
+    .overlay img{
+        height: 300px;
+        width: 100%;
+    }
+    /* team */
+    
+    /* companies */
+    #companies ul{
+        display: flex; 
+       
+        justify-content: space-around;
+    }
+    #companies img{
+       
+        width: 170px;
+        height: 45px;
+        padding: 20px 0;
+        
+    }
+    /* contact */
+   #contact{
+       height: 700px;
+   }
+
+    .left, .right{
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+    }
+   input{
+       margin-top: 20px;
+       margin-left: 0;
+   }
+    
+    textarea{
+        
+        width: 90%;
+        height: 220px;
+        margin: 20px;
+        
+    }
+    /* footer */
+   
+}
+@media (min-width: 1024px){
+    /* laptop version */
+
+     header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: transparent;
+    } 
+     header li{
+        display: inline;
+        margin: 15px;  
+      
+    }
+    /* portfolio */
+
+    #portfolio{
+        margin: auto;
+    }
+    .images{
+        margin: 15px;
+        display:grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .pictures{
+        margin: 10px;
+        
+        width: 95%;
+    }
+    .team-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #team p{
+        margin: 0 50px;
+        text-align: center;
+    }
+    #last-block{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+    }
+      
+} 
